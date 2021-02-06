@@ -1,0 +1,30 @@
+Instructions on how to run the python script:
+execute the custom_command.py script from a Linux machine
+type " python3 custom_command.py " in the linux terminal where the script is present
+and try the below commands to get the output to verify.
+
+
+Output of the custom_command python script:
+Chandras-MacBook-Air:Test_Project chandra$ python3 custom_command.py
+# newcd / mac
+/mac
+# newcd /mac/fed/ mas
+/mac/fed/mas
+# newcd /mac/fed ..
+/mac
+# newcd /mac/fed /mac/mnc
+/mac/mnc
+# newcd /mac/fed ../..
+/
+# newcd /mac/fed ../../..
+/
+# newcd /mac/fed ..mnc
+..mnc: No such file or directory
+# newcd /mac/fed //////
+/
+# newcd /mac/fed .....
+.....: No such file or directory
+# newcd /mac/fed ../ma///../mnc/.
+/mac/mnc
+# 
+
