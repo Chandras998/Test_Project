@@ -17,7 +17,7 @@ def new_path_location(current_path, new_path):
         current_path.pop()
         if not new_path:
             return current_path
-        new_path = new_path[1:]  # remove the slash
+        new_path = new_path[1:]
         return new_path_location(current_path, new_path)
 
     if not new_path[0].isalnum():
@@ -40,7 +40,7 @@ while True:
         print ("You have provided wrong input")
         continue
     if command[0] != 'newcd':
-        print ("You have provided wrong input")
+        print ("You have provided wrong cdcommand")
         continue
 
     current_path = command[1]
