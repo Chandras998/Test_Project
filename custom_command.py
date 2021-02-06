@@ -36,7 +36,7 @@ def new_path_location(current_path, new_path):
 while True:
     print ("# ", end = "")
     command = input().split()
-    if len(command) != 5:
+    if len(command) != 3:
         print ("You have provided wrong input")
         continue
     if command[0] != 'newcd':
